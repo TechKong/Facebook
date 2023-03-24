@@ -40,7 +40,7 @@ body{
     margin-left: 10%;
 }
 .middle label{
-    padding: 11px 40px;
+    padding: 11px 43px;
     margin: 0 5px;
     border-radius: 6px;
 }
@@ -56,6 +56,7 @@ a{
 
 .middle label a i{
     font-size: 20px;
+    color: black;
 }
 
 div label a i{
@@ -100,11 +101,6 @@ label.messenger{
     height: 100%;
 }
 
-.middle-wing{
-    height: 500px;
-    background: #fff;
-    margin-left: 25%;
-}
 
 .item-left{
     width: 100%;
@@ -130,10 +126,88 @@ div .item-left i{
     font-size: 20px;
 }
 
-div.status-section{
-    height: 300px;
-    width: 50%;
-    background: #d3d9e2;
+div .item-left {
+    font-weight: 500;
 }
 
+.middle-wing{
+    height: 500px;
+    margin-left: 25%;
+}
+
+div .status-section{
+    height: 290px;
+    width: 83%;
+    background: #fff;
+    margin: 25px auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.status-button{
+    padding: 3% 16%;
+    margin: -4px 0;
+    border-radius: 8px;
+    transition: all .2s ease-in;
+    font-weight: 500;
+}
+
+.status-button:hover{
+    background: #e8ecf1;
+}
+
+.status-button i{
+    font-size: 20px;
+}
+
+.status-section div .active {
+    border-radius: 0;
+    border-bottom: 3px solid rgb(71, 71, 241);
+    color: rgb(71, 71, 241);
+}
+
+.status-section div div:hover:not(.active) {
+    background: #e8ecf1;
+}
+
+.right-wing{
+    padding: 20px 0 20px 40px;
+    font-weight: 500;
+    position: fixed;
+    right: 0;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.see-all-link{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: blue;
+}
+
+.see-all-link:hover{
+   background: #e8ecf1;
+}
+
+.friend-pic{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+hr{
+    background-color: rgb(27, 26, 26);
+
+}
+
+.contact-icon label{
+    margin-left: 2px;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+
+.contact-icon label:hover{
+    background: #d0d4d8;
+}
 
