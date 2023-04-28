@@ -9,7 +9,7 @@
 body{
     overflow-x: hidden;
     background: #ECF3FF;
-    position: relative;
+    /* position: relative; */
     margin-top: 60px;
 }
 
@@ -70,11 +70,12 @@ div label a i{
     border-radius: 50%;
 }
 
-.right label a {
+.right label button {
     margin-right: 10px;
     padding: 12px 15px;
     background: #ECF3FF;
     border-radius: 50%; 
+    border: none;
 }
 
 label.messenger{
@@ -83,13 +84,14 @@ label.messenger{
 
 .notification{
     position: absolute;
-    top: -17px;
+    top: -10px;
     right: 5px;
     color: white;
     background: rgb(196, 1, 1);
     padding: 3px 5px;
     border-radius: 50%;
     font-size: 11px;
+    z-index: 999;
 }
 
 /* main*/
@@ -137,7 +139,7 @@ div .item-left {
 
 div .status-section{
     height: 290px;
-    width: 83%;
+    width: 84%;
     background: #fff;
     margin: 25px auto;
     border-radius: 10px;
@@ -179,12 +181,112 @@ div .status-section{
     height: 100%;
 }
 
+.popup{
+    width: 25%;
+    height: 80%;
+    position: fixed;
+    top: 60px;
+    right: 15px;
+    background: #ffffff;
+    display: none;
+    overflow-y: scroll;
+    box-shadow: 0 0 80px #bebebe;
+}
+
+.notify{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.new-see{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.all-unread{
+    display: flex;
+    align-items: center;
+   
+}
+
+.popup-all{
+    color: rgb(95, 95, 255);
+    padding: 7px 9px;
+    border-radius: 50%;
+    background: #d3d9e2;
+}
+
+.popup.open{
+    display: block;
+}
+
+.popup-img{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.popup-inner{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+}
+
 .see-all-link{
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     color: blue;
 }
+
+.status-pics{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.status-pics::-webkit-scrollbar{
+    display: none;
+}
+
+.status-pic{
+    width: 24%;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+    
+}
+
+.control{
+    display: flex;
+    top: 50%;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    background-color: transparent !important;
+}
+
+.btn-left, .btn-right{
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 50%;
+    padding: 10px 14px;
+    border: none;
+    /* position: fixed; */
+}
+
+.btn-left:hover, .btn-right:hover{
+    background-color: rgba(255, 255, 255, 0.918);
+}
+
 
 .see-all-link:hover{
    background: #e8ecf1;
@@ -210,4 +312,6 @@ hr{
 .contact-icon label:hover{
     background: #d0d4d8;
 }
+
+
 
